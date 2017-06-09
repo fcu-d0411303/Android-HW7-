@@ -144,11 +144,11 @@ public class MainActivity extends AppCompatActivity {
             }
             Hotel item = (Hotel) getItem(position);
             TextView tvShelter = (TextView) itemlayout.findViewById(R.id.textView);
-            tvShelter.setText(item.getShelter());
+            tvShelter.setText("  店名 : "+item.getShelter());
             TextView tvKind = (TextView) itemlayout.findViewById(R.id.textView2);
-            tvKind.setText(item.getKind());
+            tvKind.setText("  地址 : "+item.getKind());
             TextView tvTel = (TextView) itemlayout.findViewById(R.id.textView3);
-            tvTel.setText(item.getTel());
+            tvTel.setText("  電話 : "+item.getTel());
             ImageView ivPet = (ImageView) itemlayout.findViewById(R.id.imageView);
             ivPet.setImageBitmap(item.getImgUrl());
 
